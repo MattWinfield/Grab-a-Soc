@@ -153,9 +153,18 @@ p.socpara {
 }
 
 @media only screen and (max-width: 800px) {
+	.main {
+		left: 0px;
+		width: 100%;
+		height: auto;
+		margin-top: 160px;
+		background-color: white;
+		overflow-x: hidden;
+	}
+
 	.sidenav {
 		width: 100%;
-		height: 200px;
+		height: 160px;
 		background-color: #173f51;
 		position: fixed;
 		z-index: 1;
@@ -176,17 +185,25 @@ p.socpara {
 		display: flex;
 		width: 100%;
 		height: 120px;
-		margin-top: 60px;
+		margin-top: 40px;
 		background-color: #173f51;
 	}
 
 	.interest {
 		float: left;
-		padding: 30px;
-		margin: 20px;
-		cursor: pointer;
-		background-color: #2b8471;
-		border-radius: 10px;
-		transition: ease-in-out 0.3s;
+	}
+
+	.interest:hover {
+		background-color: #57a869;
+	}
+
+	.active {
+		background-color: #9fdd82;
+		font-weight: bold;
+	}
+
+	#title {
+		width: 300px;
+		margin: 200px auto;
 	}
 }
